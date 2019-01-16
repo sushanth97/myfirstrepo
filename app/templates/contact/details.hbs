@@ -1,0 +1,13 @@
+<div>
+<img src="{{model.image}}" class="rounded float-left w-25" alt="image">
+<ul class="px-3px">
+    <li>name: {{model.name}}</li>
+    <li>phone number: {{model.number}}</li>
+    <li>address: {{model.address}}</li>
+    <li>email: {{model.email}}</li>
+    <li>birthday: {{model.birthday}}</li>
+    <li>description:{{model.description}}</li>
+    </ul>
+</div>
+{{#link-to "edit" model.id}}edit{{/link-to}}
+{{outlet}}
